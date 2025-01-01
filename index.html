@@ -161,20 +161,6 @@
             margin-top: 10px;
         }
 
-        .hero .btn {
-            margin-top: 20px;
-            cursor: pointer;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transform: scale(1);
-            transition: all 0.3s ease-in-out;
-        }
-
-        .hero .btn:hover {
-            transform: scale(1.1);
-            background-color: #ff9800;
-            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-        }
-
         .services {
             margin-top: 40px;
         }
@@ -241,10 +227,6 @@
             flex-wrap: wrap;
         }
 
-        .partners-logos a {
-            display: inline-block;
-        }
-
         .partners-logos img {
             max-height: 60px;
             object-fit: contain;
@@ -280,6 +262,37 @@
             font-size: 0.9rem;
             color: #777;
         }
+
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 100%;
+                box-shadow: none;
+            }
+
+            .container {
+                flex-direction: column;
+            }
+
+            .main-content {
+                padding: 20px;
+            }
+
+            .services h3 {
+                font-size: 1.5rem;
+            }
+
+            .service-cards {
+                grid-template-columns: 1fr;
+            }
+
+            .recommendation-cards {
+                flex-direction: column;
+            }
+
+            .recommendation-cards .card {
+                width: 100%;
+            }
+        }
     </style>
 </head>
 <body>
@@ -309,7 +322,6 @@
                     <span>Amharic</span>
                     <div class="progress-bar"><div class="progress"></div></div>
                 </div>
-
                 <h3>Skills</h3>
                 <div class="skill">
                     <span>Developments</span>
@@ -443,7 +455,6 @@
                     </div>
                 </div>
             </section>
-
         </main>
     </div>
 </body>
